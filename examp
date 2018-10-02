@@ -1,0 +1,29 @@
+       
+<body>
+
+   <form action="upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="filetoupload"><br/>
+      <input type="radio" name="parseType" value="text" checked>Searchable PDF<br>
+      <input type="radio" name="parseType" value="ocr"> Scanned PDF<br>
+      <input type="submit"><br/>
+   </form>
+
+
+   <script src = "index.js"> </script>
+
+<body/>
+
+/////////////////////////////////////////////////////////////////////////////////////////
+// my node js code that extracts form data from my html page
+
+let form = new formidable.IncomingForm();
+
+
+form.parse(req, function (err, fields, files) {
+   field = fields;
+   let parseType = fields.parseType; // gets the value of the radio button chosen.
+
+} 
+
+
+/////////////////////////////////////////////////////////////////////////////////////////
