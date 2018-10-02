@@ -18,17 +18,21 @@
 //        The js file this code is from, is called server.js                           //                              
 /////////////////////////////////////////////////////////////////////////////////////////
 
+const express = require('express');
+const app = express();
 
-const formidable = require('formidable');
-let form = new formidable.IncomingForm();
+app.post('/upload', function (req, res) {
+
+   const formidable = require('formidable');
+   let form = new formidable.IncomingForm();
 
 
-form.parse(req, function (err, fields, files) {
-   field = fields;
-   let parseType = fields.parseType; // gets the value of the radio button chosen.
-
-} 
-
+   form.parse(req, function (err, fields, files) {
+      field = fields;
+      let parseType = fields.parseType; // gets the value of the radio button chosen.
+   } 
+   
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////
 // this is the link to the dependency i use to access my for data                      //
