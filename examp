@@ -9,12 +9,13 @@
    </form>
 
 
-   <script src = "index.js"> </script>
+   <script src = "server.js"> </script>
 
 <body/>
 
 /////////////////////////////////////////////////////////////////////////////////////////
 // my node js code that extracts form data from my html page                           //
+//        The js file this code is from, is called server.js                           //                              
 /////////////////////////////////////////////////////////////////////////////////////////
 
 
